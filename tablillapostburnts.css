@@ -5,7 +5,7 @@
     color: #e0e0e0;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    width: 850px;
+    max-width: 850px;
     margin: 20px auto;
     border: 1px solid #2a2a2a;
     overflow: hidden;
@@ -17,13 +17,10 @@
     position: relative;
   }
 
-  .burnts-header-overlay{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    padding:50px 40px;
-    background: radial-gradient(circle at top right, rgba(255,42,95,.15), transparent);
-}
+  .burnts-header-overlay {
+    padding: 50px 40px;
+    background: radial-gradient(circle at top right, rgba(255, 42, 95, 0.15), transparent);
+  }
 
   .burnts-badge {
     display: inline-block;
@@ -45,7 +42,6 @@
     margin: 0;
     color: #ffffff;
     line-height: 1;
-    flex:1;
   }
 
   .burnts-header-title h2 {
@@ -55,42 +51,39 @@
     color: #a0a0a0;
     margin: 5px 0 0 0;
     letter-spacing: 1px;
-    flex:1;
   }
 
-.burnts-header-img{
-    width:120px;
-    height:120px;
-    margin:0;
-    flex-shrink:0;
+.burnts-header-img {
+  width: 120px;
+  height: 120px;
+  margin: -120px 0 0 650px;
+  display: block;
 }
 
   .burnts-body {
-    display:flex;
-    gap:30px;
-    padding:30px;
-}
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    padding: 30px;
+  }
 
   .burnts-sidebar {
-    width:280px;
-    flex-shrink:0;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
   .burnts-avatar-container {
-    width: 280px;
-    height: 430px;
+    width: 100%;
     border: 1px solid #333;
     background-color: #1a1a1a;
     padding: 5px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .burnts-avatar {
-    width: 250px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     display: block;
     filter: grayscale(30%) contrast(110%);
     transition: filter 0.3s ease;
@@ -169,7 +162,9 @@
   }
 
   .burnts-main-content {
-    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 
   .burnts-section {
