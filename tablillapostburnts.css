@@ -74,11 +74,15 @@
   }
 
   .burnts-avatar-container {
-    width: 100%;
+    width: 280px;
+    height: 430px;
     border: 1px solid #333;
     background-color: #1a1a1a;
     padding: 5px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .burnts-avatar {
