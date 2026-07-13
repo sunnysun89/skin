@@ -82,8 +82,8 @@
   }
 
   .burnts-avatar {
-    width: 100%;
-    height: auto;
+    width: 250px;
+    height: 400px;
     display: block;
     filter: grayscale(30%) contrast(110%);
     transition: filter 0.3s ease;
